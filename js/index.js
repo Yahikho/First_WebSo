@@ -16,3 +16,4 @@ window.addEventListener('load', function(){
 		}
     });
 });
+/*Hola Jhon lo edito, mandelo a comer mierda*/
