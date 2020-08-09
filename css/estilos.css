@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado{
+    position: fixed;
+    /* background: linear-gradient(to right,#55E6C1); */
+    background-color: #55E6C1;
+    height: 75px;
+    width: 100%;
+    /* display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    align-items: center;
+    text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.encabezado .icon-menu{
+    display: none;
+    color: #364553;
+    font-size: 36px;
+}
+.encabezado  li{
+    list-style: none;
+}
+.encabezado  li a{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #364553;
+    text-decoration: none;
+}
+.encabezado  li a:hover{
+    color:#000000;
+}
+.encabezado .navegador .menu{
+    display: flex;
+    gap: 50px;
+}
+
+.logo  a{
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-family: 'Fredoka One', sans-serif;
+    color: #364553;
+    padding: 3px;
+}
+.logo  a strong{
+    border-bottom:2px ridge #364553;
+}
+.logo  a strong:hover{
+    color:#000000;
+    border-bottom:2px ridge #000000;
+}
+
+
+
+/*MAIN ___ PERSONALIZACION DE NUESTRO MAIN XD*/
+.grid-principal{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.imagen-bienvenida{
+    margin-top: 86px;
+}
+
+.imagen-bienvenida img{
+    width: 89.6%;
+}
+.grid-principal .binvenida{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    background: linear-gradient(to right, #55E6C1,#9eeeda,#c6f3e8,#ebf7f3,#eaf3f1,#ffffff);
+    padding-left: 60px;
+}
+.grid-principal .binvenida .lema{
+    letter-spacing: 1.6px;
+}
+
+/*MEDIA QUERYS*/
+@media screen and (max-width: 910px){
+    .encabezado{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+    .encabezado .icon-menu{
+        display: block;
+    }
+    .encabezado .icon-menu:hover{
+        cursor: pointer;
+        color: #000000;
+    }
+    .navegador  .menu{
+        position: absolute;
+        transform: translate(0);
+        left: 0;
+        background: linear-gradient(to bottom, #55E6C1,#9eeeda,#ddf3ee,#f2faf7,#f5faf9,#ffffff);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.2s;
+        top:75px;
+        width: 50%;
+        height: 480px;
+    }
+    .encabezado .navegador .menu{
+        gap: 5px;
+    }
+    .navegador .spreat{
+        /* transform: translate(0); */
+        transform: translate(-160%);
+    }
+    .imagen-bienvenida{
+        margin-top: 0px;
+    }
+
+    /*PERSONALIZACION DEL MAIN*/
+
+    .grid-principal{
+        grid-template: repeat(2, 1fr) / 1fr;
+    }
+    .grid-principal .binvenida{
+        background: linear-gradient(to bottom, #55E6C1,#9eeeda,#c6f3e8,#ebf7f3,#eaf3f1,#ffffff);
+        padding: 0;
+        height: 390px;
+    }
+}
+
+/*Productos*/
+.productos{
+}
+/*carousel_*/
+
+.carousel__contenedor{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carousel__lista{
+    text-align: center;
+}
+
