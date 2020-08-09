@@ -60,6 +60,7 @@
 .grid-principal{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 100%;
 }
 .imagen-bienvenida{
     margin-top: 86px;
@@ -83,7 +84,50 @@
     letter-spacing: 1.6px;
 }
 
+
+/*Productos*/
+.productos{
+    background: linear-gradient(to right, #55E6C1,#c4faeb,#ffffff,#ffffff,#ffffff,#ffffff);
+    font-family: 'Ubuntu', sans-serif;
+}
+/*carousel_*/
+.productos .dialogo{
+    margin-left: 8%;
+}
+.dialogo h3{
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.carousel__elemento a{
+    text-decoration: none;
+    color: #364553;
+}
+.carousel__contenedor{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.carousel__lista{
+    text-align: center;
+}
+.carousel__lista .carousel__elemento img{
+    border-radius: 8px;
+}
+.carousel__lista .carousel__elemento a:hover{
+    color: #000000;
+}
+.carousel__anterior,
+.carousel__siguiente{
+    background-color: transparent;
+    border: none;
+    font-size: 35PX;
+    color: #364553;
+    cursor: pointer;
+}
 /*MEDIA QUERYS*/
+
 @media screen and (max-width: 910px){
     .encabezado{
         position: relative;
@@ -132,19 +176,12 @@
         padding: 0;
         height: 390px;
     }
+    .productos{
+        background: linear-gradient(to bottom, #55E6C1,#9eeeda,#ddf3ee,#f2faf7,#f5faf9,#ffffff);
+    }
+    .productos .dialogo{
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+    }
 }
-
-/*Productos*/
-.productos{
-}
-/*carousel_*/
-
-.carousel__contenedor{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.carousel__lista{
-    text-align: center;
-}
-
